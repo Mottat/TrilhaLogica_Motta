@@ -37,7 +37,7 @@ public class Desafio_Nota_Final_do_Aluno {
             System.out.print("Quer continuar? [S/N] ");
             resp = teclado.next();
 
-            System.out.println("");
+            System.out.println(" ");
 
         } while (resp.equals("S"));
 

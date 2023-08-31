@@ -101,7 +101,7 @@ public class Desafio_Mercado_Compra_com_Desconto {
         System.out.println("#  - Café                 R$13,99      #");
         System.out.println("#                                      #");
         System.out.println("########################################");
-        System.out.println("");
+        System.out.println(" ");
     }
 }
 
