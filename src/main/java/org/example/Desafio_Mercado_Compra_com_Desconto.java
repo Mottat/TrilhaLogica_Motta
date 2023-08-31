@@ -8,13 +8,13 @@ public class Desafio_Mercado_Compra_com_Desconto {
 
     public static void main(String[] args) {
         menu();
+        double valorProduto = 0;
+        String prodescolhido = "";
 
         Scanner teclado = new Scanner(System.in);
 
         System.out.print("Qual produto deseja? ");
-        String prodescolhido = teclado.next();
-
-        double valorProduto = 0;
+        prodescolhido = teclado.next();
 
         switch (prodescolhido){
             case "Arroz":
