@@ -7,7 +7,13 @@ import java.util.function.Function;
 public class Desafio_Mercado_Compra_com_Desconto {
 
     public static void main(String[] args) {
+
+        String resp = "";
+
+        do {
+
         menu();
+
         double valorProduto = 0;
         String prodescolhido = "";
 
@@ -34,12 +40,16 @@ public class Desafio_Mercado_Compra_com_Desconto {
                 break;
         }
 
+            System.out.println("");
+
         System.out.print("Quantas unidades de " + prodescolhido + " você deseja? ");
         int qtdprodt = teclado.nextInt();
 
         double total = 0;
         double desc = 0;
         double valComDesc = 0;
+
+            System.out.println("");
 
         if (qtdprodt <= 10){
             total = valorProduto * qtdprodt;
@@ -55,7 +65,8 @@ public class Desafio_Mercado_Compra_com_Desconto {
             desc = total * 20/100;
             valComDesc = total - desc;
             System.out.println("O valor total da compra de " + qtdprodt +"kg " + prodescolhido +
-                    " com 20% de desconto foi de R$" + valComDesc);
+                            " com 20% de desconto foi de R$" + valComDesc);
+//            System.out.printf("%.2f", valComDesc);
         } else if (qtdprodt > 50 ){
             total = valorProduto * qtdprodt;
             desc = total * 25/100;
@@ -63,6 +74,17 @@ public class Desafio_Mercado_Compra_com_Desconto {
             System.out.println("O valor total da compra de " + qtdprodt +"kg " + prodescolhido +
                     " com 25% de desconto foi de R$" + valComDesc);
         }
+
+            System.out.println("");
+
+            System.out.print("Deseja comprar mais algum item? [S/N] ");
+            resp = teclado.next();
+
+            System.out.println("");
+
+        } while (resp.equals("S"));
+
+        System.out.println("Compra finalizada com sucesso");
 
     }
 
