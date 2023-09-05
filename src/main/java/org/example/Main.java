@@ -1,30 +1,150 @@
 package org.example;
 
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 public class Main {
     public static void main(String[] args) {
 
-        int n, s = 0;
-        String resp;
-        Scanner teclado = new Scanner(System.in);
+        // 3º - Repetição Variavel de controle
 
-        do {
-            System.out.print("Digite um numero ");
-            n = teclado.nextInt();
-            s += n;
-            System.out.print("Quer continuar? [S/N] ");
-            resp = teclado.next();
+        // Contador positivo
+//        for (int cc=0; cc<5; cc++){
+//            System.out.println(cc);
+//        }
 
-        } while (resp.equals("S"));
-        System.out.println("A soma dos valores é " + s);
+        // Contador negativo
+//        for (int cc=5; cc>=0; cc-=1){
+//            System.out.println(cc);
+//        }
+
+        // Contador 10 em 10
+//        for (int cc=0; cc<=100; cc+=10){
+//            System.out.println(cc);
+//        }
+
+//        int i,j;
+//        for (i=1; i<=3; i++){
+//            for (j=0; j<=2; j+=2){
+//                System.out.println(j);
+//            }
+//            System.out.println(i);
+//        }
+//        System.out.println(i + j);
+
+//        ### --------------------------------------------------------------- ###
+
+//        int n, s = 0, a = 0, p = 0, i = 0, m = 0, c = 0;
+//        do {
+//            n = Integer.parseInt (JOptionPane.showInputDialog(null,
+//                    "<html>Informe um numero: <br><em>(Valor 0 interrompe)</em></html>"));
+//            s += n;
+//            if (n != 0){
+//                c++;
+//            }
+//            if (n >= 100){
+//                a++;
+//            }
+//            if (n % 2 == 0){ // Não consigo tirar o numero zero do contador
+//                if (n == 0){
+//                    break;
+//                }
+//                p++;
+//            }
+//            if (n % 2 != 0){
+//                i++;
+//            }
+//            m = s / c;
+//        } while (n != 0);
+//        JOptionPane.showMessageDialog(null, "<html>Resultado: <hr>" +
+//                "<br>Total de valores:  "+ s +
+//                "<br>Total de Pares:  "+ p +
+//                "<br>Total de Impares:  "+ i +
+//                "<br>Acima de 100:  "+ a +
+//                "<br>Media de valores:  "+ m +
+//                "<br>Contador:  "+ c +
+//                "</html>");
+
+//        JOptionPane.showMessageDialog(null, "Olá Mundo","Boas Vindas", JOptionPane.INFORMATION_MESSAGE);
+//        int n = Integer.parseInt (JOptionPane.showInputDialog(null, "Informe um numero: "));
+//        JOptionPane.showMessageDialog(null,"Você digitou o nunero: " + n);
+
+//        ### --------------------------------------------------------------- ###
+
+        // 2º - Repetição com Teste no final
+        // Fatorial --
+
+//        String resp = "";
+//        int s = 0;
+//
+//        do {
+//            System.out.print("\n Digite um numero: ");
+//            Scanner teclado = new Scanner(System.in);
+//            int n = teclado.nextInt();
+//            int f = 1;
+//            int c = n;
+//            while (c >= 1) {
+//                f *= c;
+//                c--;
+//        }
+//            System.out.println("\n Fatorial de " + n + " é " + f);
+//
+//            System.out.print("\n Quer continuar? [S/N] ");
+//            resp = teclado.next();
+//
+//
+//        } while (resp.equals("S"));
+
+
+//        ### --------------------------------------------------------------- ###
+
+        // 1º - Repetição com Teste no inicio
+        // Fatorial ++
+//        int numero = 5;
+//        int fatorial = 1;
+//        int i = 1;
+//
+//        while (i <= numero){
+//            fatorial = fatorial * i;
+//            i++;
+//        }
+//
+//        System.out.println("Fatorial de " + numero + " é " + fatorial);
+
+//        ### --------------------------------------------------------------- ###
+
+        // While
+//        int cc = 0;
+//        while (cc < 10){
+//            cc++;
+//            if (cc == 5 || cc == 7){
+//                continue;
+//            }
+//            if (cc == 5){
+//                break;
+//            }
+//            System.out.println("Cambalhota - " + cc);
+//        }
+
+//        ### --------------------------------------------------------------- ###
+
+        // Do While
+//        int n, s = 0;
+//        String resp;
+//        Scanner teclado = new Scanner(System.in);
+
+//        do {
+//            System.out.print("Digite um numero ");
+//            n = teclado.nextInt();
+//            s += n;
+//            System.out.print("Quer continuar? [S/N] ");
+//            resp = teclado.next();
+//
+//        } while (resp.equals("S"));
+//        System.out.println("A soma dos valores é " + s);
 
 //
 //                System.out.println("Encerrado");
-
-
-
-
 
     }
 }
