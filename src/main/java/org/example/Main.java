@@ -6,6 +6,15 @@ import javax.swing.JOptionPane;
 public class Main {
     public static void main(String[] args) {
 
+        // Array
+
+        String[]  nomes = {"Gustavo","Rafaela","Manuela"};
+
+        for(int i = 0; i < nomes.length; i++){
+            System.out.println(nomes[i]);
+        }
+
+
         // 3º - Repetição Variavel de controle
 
         // Contador positivo
