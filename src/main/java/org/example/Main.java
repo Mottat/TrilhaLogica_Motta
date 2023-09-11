@@ -6,14 +6,18 @@ import javax.swing.JOptionPane;
 public class Main {
     public static void main(String[] args) {
 
+
+
+///////// ### --------------------------------------------------------------- ###
+
         // Array
 
-        String[]  nomes = {"Gustavo","Rafaela","Manuela"};
+//        String[]  nomes = {"Gustavo","Rafaela","Manuela"};
+//        for(int i = 0; i < nomes.length; i++){
+//            System.out.println(nomes[i]);
+//        }
 
-        for(int i = 0; i < nomes.length; i++){
-            System.out.println(nomes[i]);
-        }
-
+///////// ### --------------------------------------------------------------- ###
 
         // 3º - Repetição Variavel de controle
 
@@ -41,7 +45,7 @@ public class Main {
 //        }
 //        System.out.println(i + j);
 
-//        ### --------------------------------------------------------------- ###
+///////// ### --------------------------------------------------------------- ###
 
 //        int n, s = 0, a = 0, p = 0, i = 0, m = 0, c = 0;
 //        do {
@@ -78,7 +82,7 @@ public class Main {
 //        int n = Integer.parseInt (JOptionPane.showInputDialog(null, "Informe um numero: "));
 //        JOptionPane.showMessageDialog(null,"Você digitou o nunero: " + n);
 
-//        ### --------------------------------------------------------------- ###
+///////// ### --------------------------------------------------------------- ###
 
         // 2º - Repetição com Teste no final
         // Fatorial --
@@ -104,8 +108,7 @@ public class Main {
 //
 //        } while (resp.equals("S"));
 
-
-//        ### --------------------------------------------------------------- ###
+///////// ### --------------------------------------------------------------- ###
 
         // 1º - Repetição com Teste no inicio
         // Fatorial ++
@@ -120,7 +123,7 @@ public class Main {
 //
 //        System.out.println("Fatorial de " + numero + " é " + fatorial);
 
-//        ### --------------------------------------------------------------- ###
+///////// ### --------------------------------------------------------------- ###
 
         // While
 //        int cc = 0;
@@ -135,7 +138,7 @@ public class Main {
 //            System.out.println("Cambalhota - " + cc);
 //        }
 
-//        ### --------------------------------------------------------------- ###
+///////// ### --------------------------------------------------------------- ###
 
         // Do While
 //        int n, s = 0;
@@ -154,6 +157,8 @@ public class Main {
 
 //
 //                System.out.println("Encerrado");
+
+///////// ### --------------------------------------------------------------- ###
 
     }
 }
