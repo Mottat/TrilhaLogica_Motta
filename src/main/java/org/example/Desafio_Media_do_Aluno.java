@@ -19,8 +19,6 @@ public class Desafio_Media_do_Aluno {
 
             media = (n1 + n2) / 2;
 
-//            System.out.print("\nA média do aluno(a) " + aluno + " foi de: "+ media);
-
             if (media >=7){
                 System.out.println("\nAluno(a) " + aluno + " aprovado com média: "+ media);
             }else {

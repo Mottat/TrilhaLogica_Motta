@@ -1,12 +1,66 @@
 package org.example;
 
+import java.time.Year;
+import java.util.Arrays;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 
 public class Main {
     public static void main(String[] args) {
 
+///////// ### --------------------------------------------------------------- ###
 
+        // Vertor - For each
+
+        // Não funcionou
+//        int vet[] = {3,5,7,9,1,6,2,4};
+//        for (int v: vet){
+//            System.out.print(v + " ");
+//        }
+//        System.out.println("");
+//        int p = Arrays.binarySearch(vet,5);
+//        System.out.println("Encontrei o valor na posição " + p);
+
+        // Vetor com todas a posições iguais
+        int num[] = new int[5];
+        Arrays.fill(num,8);
+        for (int valor: num) {
+            System.out.println(valor + " ");
+        }
+
+//        int num[] = {3,5,7,9,1,6};
+        // Colocar em ordem
+//        Arrays.sort(num);
+//        for (int valor:num) {
+//            System.out.println(valor);
+//        }
+
+        // Vetor
+
+        // Verificar se o ano é bisexto
+//        int ano = 2000;
+//        if (ano % 400 ==0){
+//            System.out.println(ano + " é um ano bisexto");
+//        } else if ((ano % 4 == 0) && (ano % 100 == 0)) {
+//            System.out.println(ano + " é um ano bisexto");
+//        } else {
+//            System.out.println(ano + " não é um ano bisexto");
+//        }
+
+        // Vetor para ver quantos dias cada mes tem
+//        String mes[] = {"Jan","Fev","Mar","Abr","Mai","Jun","Jul","Ago","Set","Out","Nov","Dez"};
+//        int tot[] = {31,28,31,30,31,30,31,31,30,31,30,31};
+//        for (int c=0; c< mes.length; c++){
+//            System.out.println("O mês de " + mes[c] + " tem " + tot[c] + " dias ao todo");
+//        }
+
+//        int n[] = {3,2,8,7,5,4};
+//        System.out.println("Total de casas de N " + n.length);
+//        for (int c=0; c < n.length; c++){
+//            System.out.println(c + " - " +n[c]);
+//        }
 
 ///////// ### --------------------------------------------------------------- ###
 
