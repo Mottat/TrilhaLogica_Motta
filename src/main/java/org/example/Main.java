@@ -10,30 +10,34 @@ import javax.swing.JOptionPane;
 public class Main {
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Digite o tamanho do vetor: ");
-        int tamanho = scanner.nextInt();
-
-        // Crie um vetor de inteiros com o tamanho especificado
-        int[] vetor = new int[tamanho];
-
-        // Preencha o vetor com valores fornecidos pelo usuário
-        for (int i = 1; i < tamanho; i++) {
-            System.out.print("Digite o valor para a posição " + i + ": ");
-            vetor[i] = scanner.nextInt();
-        }
-
-        // Exiba os valores do vetor
-        System.out.println("Valores do vetor:");
-        for (int i = 1; i < tamanho; i++) {
-            System.out.println("Posição " + i + ": " + vetor[i]);
-        }
-
-        // Não se esqueça de fechar o Scanner quando não precisar mais dele
-        scanner.close();
 
 
+///////// ### --------------------------------------------------------------- ###
+
+        // Vetor com Scanner
+
+//        Scanner scanner = new Scanner(System.in);
+//
+//        System.out.print("Digite o tamanho do vetor: ");
+//        int tamanho = scanner.nextInt();
+//
+//        // Crie um vetor de inteiros com o tamanho especificado
+//        int[] vetor = new int[tamanho];
+//
+//        // Preencha o vetor com valores fornecidos pelo usuário
+//        for (int i = 1; i < tamanho; i++) {
+//            System.out.print("Digite o valor para a posição " + i + ": ");
+//            vetor[i] = scanner.nextInt();
+//        }
+//
+//        // Exiba os valores do vetor
+//        System.out.println("Valores do vetor:");
+//        for (int i = 1; i < tamanho; i++) {
+//            System.out.println("Posição " + i + ": " + vetor[i]);
+//        }
+//
+//        // Não se esqueça de fechar o Scanner quando não precisar mais dele
+//        scanner.close();
 
 ///////// ### --------------------------------------------------------------- ###
 
