@@ -17,7 +17,7 @@ public class Desafio_Tabuada {
                 n1++;
             }while (n1 <= 10);
         } else {
-            System.out.println("Digite um numero valido entre 1 e 10");
+            System.out.println("Digite um numero valido entre 1 e 10 ");
         }
     }
 }
