@@ -6,7 +6,7 @@ public class Desafio_Busca_Nome {
     public static void main(String[] args) {
 
         Scanner teclado = new Scanner(System.in);
-        String nomes[] = new String[3];
+        String nomes[] = new String[10];
         String novonome = "";
 
         // Inserir clientes no vetor
