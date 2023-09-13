@@ -10,7 +10,11 @@ import javax.swing.JOptionPane;
 public class Main {
     public static void main(String[] args) {
 
+///////// ### --------------------------------------------------------------- ###
 
+        // tolowercase
+//        String teste = "Teste";
+//        System.out.println(teste.toLowerCase());
 
 ///////// ### --------------------------------------------------------------- ###
 

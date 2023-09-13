@@ -22,18 +22,17 @@ public class Desafio_Mercado_Compra {
 
         Scanner teclado = new Scanner(System.in);
         System.out.print("Qual bebida deseja comprar? ");
-        String bebida = teclado.nextLine();
+        String bebida = teclado.nextLine().toLowerCase();
         int idade = 0;
-        if (bebida.contains("Cerveja") || bebida.contains("cerveja")) {
+        if (bebida.contains("cerveja")) {
             System.out.print("Qual sua idade? ");
             idade = teclado.nextInt();
             if (idade < 18) {
                 System.out.print("Compra Negada");
-            } else if (idade >= 18) {
+            } else {
                 System.out.println("Compra efetuada com sucesso");
             }
-        } else if (bebida.contains("Refrigerante") || bebida.contains("refrigerante") ||
-                bebida.contains("Agua") ||bebida.contains("agua") ){
+        } else if (bebida.contains("refrigerante") || bebida.contains("agua")) {
             System.out.println("Compra efetuada com sucesso");
         } else {
             System.out.println("Item não encontrado");
