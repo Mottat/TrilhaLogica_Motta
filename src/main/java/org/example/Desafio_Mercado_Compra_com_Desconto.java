@@ -11,7 +11,6 @@ public class Desafio_Mercado_Compra_com_Desconto {
         String resp = "";
 
         do {
-
         menu();
 
         double valorProduto = 0;
@@ -20,19 +19,19 @@ public class Desafio_Mercado_Compra_com_Desconto {
         Scanner teclado = new Scanner(System.in);
 
         System.out.print("Qual produto deseja? ");
-        prodescolhido = teclado.next();
+        prodescolhido = teclado.next().toLowerCase();
 
         switch (prodescolhido){
-            case "Arroz":
+            case "arroz":
                 valorProduto = Double.parseDouble("4.50");
                 break;
-            case "Feijão":
+            case "feijão":
                 valorProduto = Double.parseDouble("6.47");
                 break;
-            case "Açucar":
+            case "açucar":
                 valorProduto = Double.parseDouble("4.41");
                 break;
-            case "Café":
+            case "café":
                 valorProduto = Double.parseDouble("13.99");
                 break;
             default:
@@ -40,51 +39,44 @@ public class Desafio_Mercado_Compra_com_Desconto {
                 break;
         }
 
-            System.out.println("");
 
-        System.out.print("Quantas unidades de " + prodescolhido + " você deseja? ");
+        System.out.print("\nQuantas unidades de " + prodescolhido + " você deseja? ");
         int qtdprodt = teclado.nextInt();
 
         double total = 0;
         double desc = 0;
         double valComDesc = 0;
 
-            System.out.println("");
-
         if (qtdprodt <= 10){
             total = valorProduto * qtdprodt;
-            System.out.println("O valor total da compra de " + qtdprodt +"kg " + prodescolhido + " foi de R$" + total);
-        } else if (qtdprodt >= 11 && qtdprodt <= 20){
+            System.out.println("\nO valor total da compra de " + qtdprodt +"kg " + prodescolhido + " foi de R$" + total);
+        } else if (qtdprodt <= 20){
             total = valorProduto * qtdprodt;
             desc = total * 10/100;
             valComDesc = total - desc;
-            System.out.println("O valor total da compra de " + qtdprodt +"kg " + prodescolhido +
+            System.out.println("\nO valor total da compra de " + qtdprodt +"kg " + prodescolhido +
                     " com 10% de desconto foi de R$" + valComDesc);
-        } else if (qtdprodt >= 21 && qtdprodt <= 50){
+        } else if (qtdprodt <= 50){
             total = valorProduto * qtdprodt;
             desc = total * 20/100;
             valComDesc = total - desc;
-            System.out.println("O valor total da compra de " + qtdprodt +"kg " + prodescolhido +
+            System.out.println("\nO valor total da compra de " + qtdprodt +"kg " + prodescolhido +
                             " com 20% de desconto foi de R$" + valComDesc);
 //            System.out.printf("%.2f", valComDesc);
-        } else if (qtdprodt > 50 ){
+        } else {
             total = valorProduto * qtdprodt;
             desc = total * 25/100;
             valComDesc = total - desc;
-            System.out.println("O valor total da compra de " + qtdprodt +"kg " + prodescolhido +
+            System.out.println("\nO valor total da compra de " + qtdprodt +"kg " + prodescolhido +
                     " com 25% de desconto foi de R$" + valComDesc);
         }
 
-            System.out.println("");
+            System.out.print("\nDeseja comprar mais algum item? [S/N] ");
+            resp = teclado.next().toLowerCase();
 
-            System.out.print("Deseja comprar mais algum item? [S/N] ");
-            resp = teclado.next();
+        } while (resp.equals("s"));
 
-            System.out.println("");
-
-        } while (resp.equals("S"));
-
-        System.out.println("Compra finalizada com sucesso");
+        System.out.println("\nCompra finalizada com sucesso");
 
     }
 

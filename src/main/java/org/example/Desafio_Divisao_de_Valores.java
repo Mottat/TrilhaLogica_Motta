@@ -16,17 +16,16 @@ public class Desafio_Divisao_de_Valores {
             n2 = teclado.nextInt();
 
             if (n2 > 0){
-                resp = n1 / n2;
+//                resp = n1 / n2;
                 resto = n1 % n2;
-//            System.out.println("\n Número valido");
 //                System.out.println("\nA divisão de " + n1 + " por " + n2 + " é: " + resp);
                 System.out.println("\nO resto da divisão de " + n1 + " por " + n2 + " é: " + resto);
             } else {
                 System.out.println("\nInformar um número valido");
             }
             System.out.print("\nDeseja continuar? ");
-            res = teclado.next();
+            res = teclado.next().toLowerCase();
 
-        }while (res.equals("S"));
+        }while (res.equals("s"));
     }
 }

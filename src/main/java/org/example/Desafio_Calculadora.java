@@ -11,47 +11,43 @@ public class Desafio_Calculadora {
         int n1, n2, result = 0;
 
         do {
-            System.out.print("Digite o primeiro numero: ");
+            System.out.print("\nDigite o primeiro numero: ");
             n1 = teclado.nextInt();
 
-            System.out.print("Digite a operação: ");
+            System.out.print("\nDigite a operação: ");
             calculo = teclado.next();
 
-            System.out.print("Digite o segundo numero: ");
+            System.out.print("\nDigite o segundo numero: ");
             n2 = teclado.nextInt();
-            System.out.println("");
 
             switch (calculo){
                 case "+":
                     result = n1 + n2;
-                    System.out.println("A soma de " + n1 + " " + calculo + " " + n2 + " é: " + result);
+                    System.out.println("\nA soma de " + n1 + " " + calculo + " " + n2 + " é: " + result);
                     break;
                 case "-":
                     result = n1 - n2;
-                    System.out.println("A subitração de " + n1 + " " + calculo + " " + n2 + " é: " + result);
+                    System.out.println("\nA subitração de " + n1 + " " + calculo + " " + n2 + " é: " + result);
                     break;
                 case "*":
                     result = n1 * n2;
-                    System.out.println("A multiplicação de " + n1 + " " + calculo + " " + n2 + " é: " + result);
+                    System.out.println("\nA multiplicação de " + n1 + " " + calculo + " " + n2 + " é: " + result);
                     break;
                 case "/":
                     result = n1 / n2;
-                    System.out.println("A divisão de " + n1 + " " + calculo + " " + n2 + " é: " + result);
+                    System.out.println("\nA divisão de " + n1 + " " + calculo + " " + n2 + " é: " + result);
                     break;
                 default:
                     break;
             }
 
-            System.out.println("");
-            System.out.print("Deseja fazer outro calculo? ");
-            resp = teclado.next();
-            System.out.println("");
+            System.out.print("\nDeseja fazer outro calculo? ");
+            resp = teclado.next().toLowerCase();
 
 
-        } while (resp.equals("S"));
+        } while (resp.equals("s"));
 
-        System.out.println("");
-        System.out.println("Calculadora encerrada");
+        System.out.println("\nCalculadora encerrada");
 
     }
 }

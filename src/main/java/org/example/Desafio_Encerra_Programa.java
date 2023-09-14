@@ -13,5 +13,6 @@ public class Desafio_Encerra_Programa {
             System.out.print("Digite um numero: ");
             num = Integer.parseInt(teclado.next());
         }while (num != 10);
+        System.out.println("\nPrograma Encerrado");
     }
 }

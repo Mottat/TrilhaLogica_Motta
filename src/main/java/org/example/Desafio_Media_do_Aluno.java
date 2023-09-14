@@ -26,7 +26,7 @@ public class Desafio_Media_do_Aluno {
             }
 
             System.out.print("\nDeseja continua? ");
-            resp = teclado.next();
-        }while (resp.equals("S"));
+            resp = teclado.next().toLowerCase();
+        }while (resp.equals("s"));
     }
 }

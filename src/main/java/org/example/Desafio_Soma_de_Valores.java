@@ -7,7 +7,6 @@ public class Desafio_Soma_de_Valores {
         while (num <=100){
             s += num;
             num++;
-//            System.out.println("Numero 1 - " + num);
         }
         System.out.println("Soma total dos numeros interios entre 1 e 100 é:  " + s);
     }
