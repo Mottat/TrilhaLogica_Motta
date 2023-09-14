@@ -6,7 +6,8 @@ public class Desafio_Busca_Nome {
     public static void main(String[] args) {
 
         Scanner teclado = new Scanner(System.in);
-        String nomes[] = new String[10];
+        String[] nomes = new String[3];
+//        String[] nomes = {"a","s","d"};
         String novonome = "";
 
         // Inserir clientes no vetor
@@ -25,13 +26,17 @@ public class Desafio_Busca_Nome {
          novonome = teclado.nextLine().toLowerCase();
 
         // Verificação se nome existe no vetor
-        for (int i = 0; i < nomes.length; i++) {
-            if (nomes[i].equals(novonome)) {
-                System.out.println("Achei");
+        boolean existe = false;
+        for (String nome : nomes) {
+            if (novonome.equals(nome)){
+                existe = true;
                 break;
-            } else
-                System.out.println("Não Achei");
-            break;
+            }
+        }
+        if (existe) {
+            System.out.println("Achei");
+        } else {
+            System.out.println("Não achei");
         }
         teclado.close();
     }
